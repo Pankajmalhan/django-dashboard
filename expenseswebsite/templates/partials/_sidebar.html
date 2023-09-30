@@ -8,16 +8,16 @@
           Dashboard <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link">
+      {% comment %} <li class="nav-item">
+        <a class="nav-link" href="{% url 'expenses' %}">
           Expenses
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link">
+        <a class="nav-link" href="{% url 'income' %}">
           Income
         </a>
-      </li>
+      </li> {% endcomment %}
     </ul>
 
     <h6
@@ -33,11 +33,11 @@
       </a>
     </h6>
     <ul class="nav flex-column mb-2">
-      <li class="nav-item">
-        <a class="nav-link" href="">
+      {% comment %} <li class="nav-item">
+        <a class="nav-link" href="{% url 'stats'%}">
           Expenses Summary
         </a>
-      </li>
+      </li> {% endcomment %}
       <li class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
@@ -59,11 +59,11 @@
       </a>
     </h6>
     <ul class="nav flex-column mb-2">
-      <li class="nav-item">
-        <a class="nav-link">
+      {% comment %} <li class="nav-item">
+        <a class="nav-link" href="{% url 'preferences' %}">
           General
         </a>
-      </li>
+      </li> {% endcomment %}
       <li class="nav-item">
         <a class="nav-link" href="#">
           <span data-feather="file-text"></span>
